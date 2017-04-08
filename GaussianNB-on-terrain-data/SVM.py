@@ -47,6 +47,22 @@ accuracy = accuracy_score(labels_test, pred)
 
 print accuracy
 
+count = 0
+
+for i in range(len(features_test)):
+    if clf.predict(features_test[i]) == 1:
+        count += 1
+
+print count
+
+
+
+
+
+
+answer=clf.predict(features_test[50])
+print answer
+
 
 #########################################################
 
